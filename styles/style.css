@@ -1,1 +1,272 @@
-/* место для вашего кода */
+/* HEADER*/
+header {
+    display : grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 92px 24px;
+    font-size: 18px;
+    font-weight: 400;
+    text-underline-offset: 4px;
+}
+
+.top-nav {
+    display: flex;
+    justify-self: center;
+}
+
+.top-nav-list {
+    display: flex;
+    gap: 30px;
+    list-style: circle;
+}
+
+.li_home {
+    list-style: none;
+}
+.li_home a{
+    text-decoration: none;
+}
+
+header address {
+    font-style: normal;
+    line-height: 24.3px;
+    justify-self: end;
+}
+
+/*ВХОДНАЯ СЕКЦИЯ*/
+.cover {
+    height: 757px;
+    width: 1100px;
+    position: relative;
+    background-image: url("../images/cover.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-color: rgba(15, 15, 15, 0.7);
+  flex-direction: column;
+}
+
+.cover_title {
+    display: flex;
+    position: absolute;
+    flex-wrap: wrap;
+    font-weight: 700 lighter;
+    font-size: 100px;
+    line-height: 115px;
+    letter-spacing: 30px;
+}
+.ono,
+.tebe,
+.nado {
+    max-height: 115px;
+    min-width: 1100px;
+}
+.ono {
+    padding-top: 165px;
+    padding-left: 50px;
+}
+
+.tebe{
+    margin-top: 140px;
+    padding-left: 380.5px;
+}
+
+.nado {
+    margin-top: 20px;
+    padding-left: 663px;
+}
+
+.description {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+    gap: 79px;
+    margin-top: 376px;
+}
+.description p {
+    text-align: left;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 28;
+    word-spacing: 18px;
+}
+
+.description button {
+    width: 256px;
+    height: 51px;
+    border: 1px solid white;
+    background-color: transparent;
+    font-size: 22px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.description button a {
+    text-decoration: none;
+}
+
+/*ЛОТЫ*/
+.lots h1 {
+    display: block;
+    font-size: 40px;
+    font-weight: 700;
+    padding: 179px 0px 26px 64px;
+}
+
+.cards {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 9px;;
+}
+
+.film,
+.book,
+.picture {
+    display: block;
+    max-width: 334px;
+    min-height: 596px;
+    position: relative;
+    flex: 1;
+    background-position: center;
+    background-size: cover;
+}
+
+.film {
+    background-image: url("../images/card-lot-01.jpg");
+}
+.book {
+    background-image: url("../images/card-lot-02.jpg");
+}
+.picture {
+    background-image: url("../images/card-lot-03.jpg");
+}
+
+.card_overlay {
+    max-width: 334px;
+    min-height: 596px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 45px 40px;
+    background-color: rgba(15, 15, 15, 0.7);
+    color: white;
+}
+
+.card_overlay h2 {
+    font-size: 22px;
+    font-weight: 700 lighter; 
+    line-height: 120%;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.card_overlay p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.view_more {
+    display: block;
+    text-underline-offset: 5px;
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 30px;
+    margin-left: 40px;
+}
+
+/*ОБ АУКЦИОНЕ*/
+.about {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 148px;
+}
+
+.about_logo {
+    width: 240px;
+    height: 240px;
+    background-color: black;
+    border-radius: 50%;
+    margin-top: 35px;
+    margin-left: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.about_logo img {
+    max-width: 70%;
+    max-height: 70%;
+}
+
+.about_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 133px;
+}
+
+.about_text h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.about_text span {
+    max-width: 688px;
+    margin-top: 150px;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+/*ПОДВАЛ*/
+footer {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    padding: 180px 50px 88px;
+    gap: 140px;
+    align-items: center;
+}
+
+footer address {
+    font-style: normal;
+    line-height: 24.3px;
+    justify-self: start;
+    font-size: 18px;
+    font-weight: 400;
+    text-underline-offset: 4px;
+}
+
+.bottom_nav ul li{
+    list-style: none;
+    text-align: center;
+    font-size: 18px;
+    text-underline-offset: 3.5px;
+    text-transform: lowercase;
+}
+
+.bottom_logo {
+    display: flex;
+    gap: 48px;
+}
+
+.bottom_logo img {
+    width: 48px;
+    height: 48px;
+}
